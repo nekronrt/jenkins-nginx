@@ -1,7 +1,7 @@
 version: '3'
 services:
   jenkins:
-    image: "jenkinsci/blueocean"
+    image: "jenkins/jenkins:lts"
     user: root
     volumes:
       - ./jenkins_home:/var/jenkins_home
@@ -15,7 +15,7 @@ services:
   nginx:
     image: "nginx:latest"
     links:
-      - jenkins:jenkinssvc
+      - jenkins:jenkins
     ports:
       - "8080:80"
     volumes:
