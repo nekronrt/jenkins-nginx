@@ -15,5 +15,5 @@ Get wait for the containers to start and jenkins will be available on http://loc
 
 It's a docker-compose project which has two services:
 
-- jenkins (jenkinsci/blueocean): The jenkins master
+- jenkins (jenkins/jenkins:lts): The jenkins master
 - nginx (nginx): Reverse proxy to handle connections to the jenkins master
